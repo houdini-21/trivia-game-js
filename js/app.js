@@ -23,7 +23,6 @@ document.getElementById("comenzarQuiz").addEventListener("click", function (e) {
 });
 
 //primera pantalla
-
 function respuesta1Pregunta1() {
   puntos = puntos + 2;
   document.getElementById("1pregunta").style.display = "none";
