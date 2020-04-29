@@ -12,7 +12,6 @@
   </head>
   <body>
     <div class="fondo" id="home">
-      
       <div class="center">
         <div class="box">
           <div class="title"><h1>Hola Gamer!!</h1></div>
@@ -66,17 +65,31 @@
       <div class="center">
         <div class="box">
           <div class="title">
-            <span>1-¿Cual fue el estudio que desarollo el videojuego Gris?</span>
+            <span
+              >1-¿Cual fue el estudio que desarollo el videojuego Gris?</span
+            >
           </div>
           <div class="btn-box-preguntas">
-            <button type="button" class="btn-pregunta-uno" onclick="respuesta1Pregunta1()">
+            <button
+              type="button"
+              class="btn-pregunta-uno"
+              onclick="respuesta1Pregunta1()"
+            >
               Nomada Studio
             </button>
 
-            <button type="button" class="btn-pregunta-uno" onclick="respuesta2Pregunta1()">
+            <button
+              type="button"
+              class="btn-pregunta-uno"
+              onclick="respuesta2Pregunta1()"
+            >
               Konami
             </button>
-            <button type="button" class="btn-pregunta-uno" onclick="respuesta3Pregunta1()">
+            <button
+              type="button"
+              class="btn-pregunta-uno"
+              onclick="respuesta3Pregunta1()"
+            >
               Devolver Studio
             </button>
           </div>
@@ -88,17 +101,32 @@
       <div class="center">
         <div class="box">
           <div class="title">
-            <span>2-¿Cual es el color de la primera emocion que encuentra Gris?</span>
+            <span
+              >2-¿Cual es el color de la primera emocion que encuentra
+              Gris?</span
+            >
           </div>
           <div class="btn-box-preguntas">
-            <button type="button" class="btn-pregunta-dos" onclick="respuesta1Pregunta2()">
+            <button
+              type="button"
+              class="btn-pregunta-dos"
+              onclick="respuesta1Pregunta2()"
+            >
               Verde
             </button>
 
-            <button type="button" class="btn-pregunta-dos" onclick="respuesta2Pregunta2()">
+            <button
+              type="button"
+              class="btn-pregunta-dos"
+              onclick="respuesta2Pregunta2()"
+            >
               Rojo
             </button>
-            <button type="button" class="btn-pregunta-dos" onclick="respuesta3Pregunta2()">
+            <button
+              type="button"
+              class="btn-pregunta-dos"
+              onclick="respuesta3Pregunta2()"
+            >
               Azul
             </button>
           </div>
@@ -106,22 +134,36 @@
       </div>
     </div>
 
-
     <div class="fondo-3-pregunta" id="3pregunta" style="display: none;">
       <div class="center">
         <div class="box">
           <div class="title">
-            <span>3-¿Cual es la primera habilidad que desbloqueas en el juego?</span>
+            <span
+              >3-¿Cual es la primera habilidad que desbloqueas en el
+              juego?</span
+            >
           </div>
           <div class="btn-box-preguntas">
-            <button type="button" class="btn-pregunta-tres" onclick="respuesta1Pregunta3()">
+            <button
+              type="button"
+              class="btn-pregunta-tres"
+              onclick="respuesta1Pregunta3()"
+            >
               Volar
             </button>
 
-            <button type="button" class="btn-pregunta-tres" onclick="respuesta2Pregunta3()">
+            <button
+              type="button"
+              class="btn-pregunta-tres"
+              onclick="respuesta2Pregunta3()"
+            >
               Romper el suelo
             </button>
-            <button type="button" class="btn-pregunta-tres" onclick="respuesta3Pregunta3()">
+            <button
+              type="button"
+              class="btn-pregunta-tres"
+              onclick="respuesta3Pregunta3()"
+            >
               Super salto
             </button>
           </div>
@@ -133,17 +175,32 @@
       <div class="center">
         <div class="box">
           <div class="title">
-            <span>4-¿Cual es el animal que salva a gris cuando la persigue la oscuridad?</span>
+            <span
+              >4-¿Cual es el animal que salva a gris cuando la persigue la
+              oscuridad?</span
+            >
           </div>
           <div class="btn-box-preguntas">
-            <button type="button" class="btn-pregunta-cuatro" onclick="respuesta1Pregunta4()">
+            <button
+              type="button"
+              class="btn-pregunta-cuatro"
+              onclick="respuesta1Pregunta4()"
+            >
               Anguila
             </button>
 
-            <button type="button" class="btn-pregunta-cuatro" onclick="respuesta2Pregunta4()">
+            <button
+              type="button"
+              class="btn-pregunta-cuatro"
+              onclick="respuesta2Pregunta4()"
+            >
               Gato
             </button>
-            <button type="button" class="btn-pregunta-cuatro" onclick="respuesta3Pregunta4()">
+            <button
+              type="button"
+              class="btn-pregunta-cuatro"
+              onclick="respuesta3Pregunta4()"
+            >
               Tortuga
             </button>
           </div>
@@ -151,9 +208,53 @@
       </div>
     </div>
 
+    <div class="fondo-ganaste" id="ganaste" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title-resultado">
+            <h1 id="nombreUser"></h1>
+          </div>
+          <div class="sub-title-medium">
+            <span> Lo lograste!! Superaste la prueba!! </span>
+          </div>
+          <div class="puntuacion">
+            <span id='puntuacion'></span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button type="button" class="btn-reiniciar-ganaste" onclick="reiniciarprueba()">
+              Reiniciar Prueba
+            </button>
+            <button type="button" class="btn-finalizar-ganaste" onclick="terminarprueba()">
+              Terminar Prueba
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
+    <div class="fondo-perdiste" id="perdiste" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title-resultado">
+            <h1 id="nombreUser2"></h1>
+          </div>
+          <div class="sub-title-medium">
+            <span> Fallaste la prueba con un puntaje de:</span>
+          </div>
+          <div class="puntuacion">
+            <span id='puntuacion2'></span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button type="button" class="btn-reiniciar-perdida" onclick="reiniciarprueba()">
+              Reiniciar Prueba
+            </button>
+            <button type="button" class="btn-finalizar-perdida" onclick="terminarprueba()">
+              Terminar Prueba
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/app.js"></script>
   </body>
