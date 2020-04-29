@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sub-title-light {
+  text-align: justify;
+  font-size: 20px;
+}
+.sub-title-light h2 {
+  color: #fafafa;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.title h1 {
+  color: #fafafa;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -3px;
+  margin: 5px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 20px;
+}
+.sub-title h2 {
+  color: #fafafa;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.caja-input input[type="text"] {
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.caja-input input[type="button"] {
+  width: 50%;
+  background-color: #d95578;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.caja-input input[type="button"]:hover {
+  background-color: rgb(196, 76, 108);
+}
+
+.caja-input {
+  align-items: center;
+  text-align: center;
+}
+
+.btn-box {
+  align-items: center;
+  text-align: center;
+}
+.title span {
+  color: #fafafa;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin: 5px;
+}
+.btn-box-preguntas {
+  align-items: center;
+  text-align: center;
+}
+
+/*
+primera pantalla fondo y estilos
+*/
+.fondo {
+  background-image: url("../img/Imagen-home.png");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(73, 174, 196, 0.5);
+}
+button.btn-iniciar-bienvenida-comenzar {
+  width: 50%;
+  background-color: #205ae3;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+button.btn-iniciar-bienvenida-ver-trailer {
+  width: 50%;
+  background-color: #648ae3;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+/*
+Pantalla bienvenida fondo y estilos*/
+
+.fondo-bienvenida {
+  background-image: url("../img/img-bienvenida.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-bienvenida:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(21, 60, 150, 0.5);
+}
+
+/*Pantalla primera pregunta fondo y estilos */
+.fondo-1-pregunta {
+  background-image: url("../img/img-1-pregunta.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-1-pregunta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(91, 206, 183, 0.45);
+}
+
+button.btn-pregunta-uno {
+  width: 50%;
+  background-color: #648ae3;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #ef7c8f;
+}
+
+/*Pantalla segunda pregunta fondo y estilos */
+
+.fondo-2-pregunta {
+  background-image: url("../img/img-2-pregunta.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-2-pregunta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(238, 115, 206, 0.6);
+}
+
+button.btn-pregunta-dos {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #f078d1;
+}
+/*Pantalla tercera pregunta fondo y estilos */
+
+.fondo-3-pregunta {
+  background-image: url("../img/img-3-pregunta.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-3-pregunta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(181, 43, 60, 0.6);
+}
+
+button.btn-pregunta-tres {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #971a26;
+}
+/*Pantalla cuarta pregunta fondo y estilos */
+
+.fondo-4-pregunta {
+  background-image: url("../img/img-4-pregunta.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-4-pregunta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(13, 51, 77, 0.6);
+}
+
+button.btn-pregunta-cuatro {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #873f76;
+}
+/*Pantalla derrota fondo y estilos */
+
+.fondo-perdiste {
+  background-image: url("../img/img-perdida.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-perdiste:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(8, 8, 8, 0.65);
+}
+
+button.btn-reiniciar-perdida {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #df578d;
+}
+
+button.btn-finalizar-perdida {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #c4434f;
+}
+
+/*Pantalla usuario gana fondo y estilos */
+.fondo-ganaste {
+  background-image: url("../img/img-victoria.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-ganaste:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(8, 8, 8, 0.65);
+}
+
+button.btn-reiniciar-ganaste {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #df578d;
+}
+
+button.btn-finalizar-ganaste {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #c4434f;
+}
