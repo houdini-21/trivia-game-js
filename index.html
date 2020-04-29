@@ -3,15 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Gris Game</title>
+    <title>Quiz - Gris Game</title>
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body>
+
     <div class="fondo" id="home">
+      
       <div class="center">
         <div class="box">
           <div class="title"><h1>Hola Gamer!!</h1></div>
@@ -24,6 +50,7 @@
               id="nombre"
             />
             <input type="button" value="Continuar" id="guardarNombre" />
+
           </div>
         </div>
       </div>
@@ -218,13 +245,21 @@
             <span> Lo lograste!! Superaste la prueba!! </span>
           </div>
           <div class="puntuacion">
-            <span id='puntuacion'></span>
+            <span id="puntuacion"></span>
           </div>
           <div class="btn-box-preguntas">
-            <button type="button" class="btn-reiniciar-ganaste" onclick="reiniciarprueba()">
+            <button
+              type="button"
+              class="btn-reiniciar-ganaste"
+              onclick="reiniciarprueba()"
+            >
               Reiniciar Prueba
             </button>
-            <button type="button" class="btn-finalizar-ganaste" onclick="terminarprueba()">
+            <button
+              type="button"
+              class="btn-finalizar-ganaste"
+              onclick="terminarprueba()"
+            >
               Terminar Prueba
             </button>
           </div>
@@ -242,13 +277,21 @@
             <span> Fallaste la prueba con un puntaje de:</span>
           </div>
           <div class="puntuacion">
-            <span id='puntuacion2'></span>
+            <span id="puntuacion2"></span>
           </div>
           <div class="btn-box-preguntas">
-            <button type="button" class="btn-reiniciar-perdida" onclick="reiniciarprueba()">
+            <button
+              type="button"
+              class="btn-reiniciar-perdida"
+              onclick="reiniciarprueba()"
+            >
               Reiniciar Prueba
             </button>
-            <button type="button" class="btn-finalizar-perdida" onclick="terminarprueba()">
+            <button
+              type="button"
+              class="btn-finalizar-perdida"
+              onclick="terminarprueba()"
+            >
               Terminar Prueba
             </button>
           </div>

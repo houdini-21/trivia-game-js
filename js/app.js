@@ -1,5 +1,6 @@
 let nombreUser = "";
 let puntos = 0;
+
 document
   .getElementById("guardarNombre")
   .addEventListener("click", function (e) {
@@ -124,3 +125,5 @@ function reiniciarprueba(){
   document.getElementById("bienvenida").style.display = "block";
   puntos = 0
 }
+
+
