@@ -35,11 +35,6 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body>
-    <audio controls autoplay="true" volume='5' style="display: none;">
-      <source src="./gris.ogg" type="audio/ogg" />
-      <source src="./gris.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
     <div class="fondo" id="home">
       <div class="center">
         <div class="box">
@@ -64,9 +59,9 @@
           <div class="title"><h1 id="nombreUsuario"></h1></div>
           <div class="sub-title-light">
             <h2>
-              Esta es una trivia sobre el videojuego Gris, un videojuego que
-              gracias a sus colores,ambientacion y musica lo vuelven un
-              espectaculo visual.
+              Esta es una trivia del videojuego Gris y Little Misfortune que
+              gracias a sus estilos,Historia y colores los vuelven un
+              espectaculo.
             </h2>
           </div>
           <div class="btn-box">
@@ -84,19 +79,13 @@
             >
               Comenzar Prueba B
             </button>
-            <a
-              href="https://www.youtube.com/watch?v=gvECQlxrhbw"
-              target="_blank"
-            >
-              <button type="button" class="btn-iniciar-bienvenida-ver-trailer">
-                Ver Trailer
-              </button>
-            </a>
           </div>
         </div>
       </div>
     </div>
-    <!---- Pantallas preguntas A-->
+    <!--------------------------------------------- Pantallas preguntas Tipo A --------------------------------------------->
+    <!--------------------------------------------- Pregunta 1------------- --------------------------------------------->
+
     <div class="fondo-1-pregunta" id="1pregunta" style="display: none;">
       <div class="center">
         <div class="box">
@@ -132,7 +121,7 @@
         </div>
       </div>
     </div>
-
+    <!--------------------------------------------- Pregunta 2---------------------------------------------------------->
     <div class="fondo-2-pregunta" id="2pregunta" style="display: none;">
       <div class="center">
         <div class="box">
@@ -169,7 +158,7 @@
         </div>
       </div>
     </div>
-
+    <!--------------------------------------------- Pregunta 3------------- --------------------------------------------->
     <div class="fondo-3-pregunta" id="3pregunta" style="display: none;">
       <div class="center">
         <div class="box">
@@ -206,7 +195,7 @@
         </div>
       </div>
     </div>
-
+    <!--------------------------------------------- Pregunta 4------------- --------------------------------------------->
     <div class="fondo-4-pregunta" id="4pregunta" style="display: none;">
       <div class="center">
         <div class="box">
@@ -243,149 +232,7 @@
         </div>
       </div>
     </div>
-
-    <!--- Pantallas preguntas B-->
-
-    <div class="fondo-1-pregunta" id="1Bpregunta" style="display: none;">
-      <div class="center">
-        <div class="box">
-          <div class="title">
-            <span>1-¿Que genero de videojuego es gris?</span>
-          </div>
-          <div class="btn-box-preguntas">
-            <button
-              type="button"
-              class="btn-pregunta-uno"
-              onclick="respuesta1Pregunta1B()"
-            >
-              Plataforma y Aventura
-            </button>
-
-            <button
-              type="button"
-              class="btn-pregunta-uno"
-              onclick="respuesta2Pregunta1B()"
-            >
-              Aventura
-            </button>
-            <button
-              type="button"
-              class="btn-pregunta-uno"
-              onclick="respuesta3Pregunta1B()"
-            >
-              Biografico
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fondo-2-pregunta" id="2Bpregunta" style="display: none;">
-      <div class="center">
-        <div class="box">
-          <div class="title">
-            <span>2-¿En que ano fue lanzado el videojuego gris?</span>
-          </div>
-          <div class="btn-box-preguntas">
-            <button
-              type="button"
-              class="btn-pregunta-dos"
-              onclick="respuesta1Pregunta2B()"
-            >
-              2018
-            </button>
-
-            <button
-              type="button"
-              class="btn-pregunta-dos"
-              onclick="respuesta2Pregunta2B()"
-            >
-              2019
-            </button>
-            <button
-              type="button"
-              class="btn-pregunta-dos"
-              onclick="respuesta3Pregunta2B()"
-            >
-              2020
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fondo-3-pregunta" id="3Bpregunta" style="display: none;">
-      <div class="center">
-        <div class="box">
-          <div class="title">
-            <span>3-¿De que forma es el "amigo" de gris?</span>
-          </div>
-          <div class="btn-box-preguntas">
-            <button
-              type="button"
-              class="btn-pregunta-tres"
-              onclick="respuesta1Pregunta3B()"
-            >
-              Triangulo
-            </button>
-
-            <button
-              type="button"
-              class="btn-pregunta-tres"
-              onclick="respuesta2Pregunta3B()"
-            >
-              Cuadrado
-            </button>
-            <button
-              type="button"
-              class="btn-pregunta-tres"
-              onclick="respuesta3Pregunta3B()"
-            >
-              Redondo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fondo-4-pregunta" id="4Bpregunta" style="display: none;">
-      <div class="center">
-        <div class="box">
-          <div class="title">
-            <span
-              >4-¿De que forma animal se representa la oscuridad(depresion) en
-              gris?</span
-            >
-          </div>
-          <div class="btn-box-preguntas">
-            <button
-              type="button"
-              class="btn-pregunta-cuatro"
-              onclick="respuesta1Pregunta4B()"
-            >
-              Anguila y Pajaro
-            </button>
-
-            <button
-              type="button"
-              class="btn-pregunta-cuatro"
-              onclick="respuesta2Pregunta4B()"
-            >
-              Raton y Murcielago
-            </button>
-            <button
-              type="button"
-              class="btn-pregunta-cuatro"
-              onclick="respuesta3Pregunta4B()"
-            >
-              Paloma y Rana
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--- Pantallas Ganaste o perdiste-->
+    <!--------------------------------------------- Pantalla Ganaste ------------- --------------------------------------------->
     <div class="fondo-ganaste" id="ganaste" style="display: none;">
       <div class="center">
         <div class="box">
@@ -401,14 +248,14 @@
           <div class="btn-box-preguntas">
             <button
               type="button"
-              class="btn-reiniciar-ganaste"
+              class="btn-PruebaA-TipoA"
               onclick="reiniciarpruebaA()"
             >
               Tomar Prueba A
             </button>
             <button
               type="button"
-              class="btn-finalizar-ganaste"
+              class="btn-PruebaA-TipoB"
               onclick="reiniciarpruebaB()"
             >
               Tomar Prueba B
@@ -417,6 +264,7 @@
         </div>
       </div>
     </div>
+    <!--------------------------------------------- Pantalla perdiste ------------- --------------------------------------------->
 
     <div class="fondo-perdiste" id="perdiste" style="display: none;">
       <div class="center">
@@ -433,14 +281,14 @@
           <div class="btn-box-preguntas">
             <button
               type="button"
-              class="btn-reiniciar-perdida"
+              class="btn-PruebaA-TipoA"
               onclick="reiniciarpruebaA()"
             >
               Tomar Prueba A
             </button>
             <button
               type="button"
-              class="btn-finalizar-perdida"
+              class="btn-PruebaA-TipoB"
               onclick="reiniciarpruebaB()"
             >
               Tomar Prueba B
@@ -450,6 +298,220 @@
       </div>
     </div>
 
-    <script src="./js/app.js"></script>
+    <!---------------------------------------Pantallas tipo B------------------------------------------------------>
+    <!--------------------------------------------- Pregunta 1------------- --------------------------------------------->
+
+    <div class="fondo-1-preguntaB" id="1Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span
+              >1-¿Como se llama la protagonista del juego little
+              misfortune?</span
+            >
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-unoB"
+              onclick="respuesta1Pregunta1B()"
+            >
+              MisFortune
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-unoB"
+              onclick="respuesta2Pregunta1B()"
+            >
+              Adelai
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-unoB"
+              onclick="respuesta3Pregunta1B()"
+            >
+              Max
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------- Pregunta 2------------- --------------------------------------------->
+
+    <div class="fondo-2-preguntaB" id="2Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span
+              >2-¿En que ano fue lanzado el videojuego little misfortune?</span
+            >
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-dosB"
+              onclick="respuesta1Pregunta2B()"
+            >
+              2018
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-dosB"
+              onclick="respuesta2Pregunta2B()"
+            >
+              2019
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-dosB"
+              onclick="respuesta3Pregunta2B()"
+            >
+              2020
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------- Pregunta 3------------- --------------------------------------------->
+
+    <div class="fondo-3-preguntaB" id="3Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span
+              >3-¿Nombre de la ciudad donde se desarrolla el videojuego?</span
+            >
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-tresB"
+              onclick="respuesta1Pregunta3B()"
+            >
+              OverField
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-tresB"
+              onclick="respuesta2Pregunta3B()"
+            >
+              OpenFields
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-tresB"
+              onclick="respuesta3Pregunta3B()"
+            >
+              OtherFields
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------- Pregunta 4------------- --------------------------------------------->
+
+    <div class="fondo-4-preguntaB" id="4Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span>4-¿Nombre del villano del videojuego?</span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-cuatroB"
+              onclick="respuesta1Pregunta4B()"
+            >
+              Morgo
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-cuatroB"
+              onclick="respuesta2Pregunta4B()"
+            >
+              Mister Fortune
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-cuatroB"
+              onclick="respuesta3Pregunta4B()"
+            >
+              Maxine
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------- Pantalla ganaste------------- --------------------------------------------->
+
+    <div class="fondo-ganasteB" id="ganasteB" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title-resultado">
+            <h1 id="nombreUserB"></h1>
+          </div>
+          <div class="sub-title-medium">
+            <span> Lo lograste!! Superaste la prueba!! </span>
+          </div>
+          <div class="puntuacion">
+            <span id="puntuacionB"></span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-PruebaB-TipoA"
+              onclick="reiniciarpruebaA()"
+            >
+              Tomar Prueba A
+            </button>
+            <button
+              type="button"
+              class="btn-PruebaB-TipoB"
+              onclick="reiniciarpruebaB()"
+            >
+              Tomar Prueba B
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------- Pantalla perdiste------------- --------------------------------------------->
+    <div class="fondo-perdisteB" id="perdisteB" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title-resultado">
+            <h1 id="nombreUser2B"></h1>
+          </div>
+          <div class="sub-title-medium">
+            <span> Fallaste la prueba con un puntaje de:</span>
+          </div>
+          <div class="puntuacion">
+            <span id="puntuacion2B"></span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-PruebaB-TipoA"
+              onclick="reiniciarpruebaA()"
+            >
+              Tomar Prueba A
+            </button>
+            <button
+              type="button"
+              class="btn-PruebaB-TipoB"
+              onclick="reiniciarpruebaB()"
+            >
+              Tomar Prueba B
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
