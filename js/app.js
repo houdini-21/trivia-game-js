@@ -127,3 +127,7 @@ function reiniciarprueba(){
 }
 
 
+function cargando(){
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("home").style.display = "block";
+}
