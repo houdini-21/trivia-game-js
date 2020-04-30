@@ -1,6 +1,8 @@
 let nombreUser = "";
 let puntos = 0;
 
+
+
 document
   .getElementById("guardarNombre")
   .addEventListener("click", function (e) {
@@ -17,10 +19,15 @@ document
         "Hola " + nombreUserfinal;
     }
   });
-document.getElementById("comenzarQuiz").addEventListener("click", function (e) {
+document.getElementById("comenzarQuizA").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("bienvenida").style.display = "none";
   document.getElementById("1pregunta").style.display = "block";
+});
+document.getElementById("comenzarQuizB").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("bienvenida").style.display = "none";
+  document.getElementById("1Bpregunta").style.display = "block";
 });
 
 //primera pantalla
@@ -103,31 +110,119 @@ function respuesta3Pregunta4() {
   return validar();
 }
 
+
+//preguntas prueba B
+function respuesta1Pregunta1B() {
+  puntos = puntos + 1;
+  document.getElementById("1Bpregunta").style.display = "none";
+  document.getElementById("2Bpregunta").style.display = "block";
+}
+
+function respuesta2Pregunta1B() {
+  puntos = puntos + 0;
+  document.getElementById("1Bpregunta").style.display = "none";
+  document.getElementById("2Bpregunta").style.display = "block";
+}
+
+function respuesta3Pregunta1B() {
+  puntos = puntos + 0;
+  document.getElementById("1Bpregunta").style.display = "none";
+  document.getElementById("2Bpregunta").style.display = "block";
+}
+
+//segunda pantalla B
+function respuesta1Pregunta2B() {
+  puntos = puntos + 1;
+  document.getElementById("2Bpregunta").style.display = "none";
+  document.getElementById("3Bpregunta").style.display = "block";
+}
+
+function respuesta2Pregunta2B() {
+  puntos = puntos + 0;
+  document.getElementById("2Bpregunta").style.display = "none";
+  document.getElementById("3Bpregunta").style.display = "block";
+}
+
+function respuesta3Pregunta2B() {
+  puntos = puntos + 0;
+  document.getElementById("2Bpregunta").style.display = "none";
+  document.getElementById("3Bpregunta").style.display = "block";
+}
+
+// tercer pantalla B
+
+function respuesta1Pregunta3B() {
+  puntos = puntos + 0;
+  document.getElementById("3Bpregunta").style.display = "none";
+  document.getElementById("4Bpregunta").style.display = "block";
+}
+
+function respuesta2Pregunta3B() {
+  puntos = puntos + 1;
+  document.getElementById("3Bpregunta").style.display = "none";
+  document.getElementById("4Bpregunta").style.display = "block";
+}
+
+function respuesta3Pregunta3B() {
+  puntos = puntos + 0;
+  document.getElementById("3Bpregunta").style.display = "none";
+  document.getElementById("4Bpregunta").style.display = "block";
+}
+
+//cuarta pantalla B
+function respuesta1Pregunta4B() {
+  puntos = puntos + 1;
+  document.getElementById("3Bpregunta").style.display = "none";
+  document.getElementById("4Bpregunta").style.display = "block";
+  return validar();
+}
+
+function respuesta2Pregunta4B() {
+  puntos = puntos + 0;
+  document.getElementById("3Bpregunta").style.display = "none";
+  document.getElementById("4Bpregunta").style.display = "block";
+  return validar();
+}
+
+function respuesta3Pregunta4B() {
+  puntos = puntos + 0;
+  document.getElementById("3Bpregunta").style.display = "none";
+  document.getElementById("4Bpregunta").style.display = "block";
+  return validar();
+}
+
+
+//validaciones
 function validar() {
   if (puntos === 4) {
     document.getElementById("4pregunta").style.display = "none";
+    document.getElementById("4Bpregunta").style.display = "none";
+
     document.getElementById("ganaste").style.display = "block";
     document.getElementById("nombreUser").innerHTML =
       "Eso es " + nombreUserfinal + "!!!";
     document.getElementById("puntuacion").innerHTML = puntos + "/4";
   } else if (puntos <= 4) {
     document.getElementById("4pregunta").style.display = "none";
+    document.getElementById("4Bpregunta").style.display = "none";
     document.getElementById("perdiste").style.display = "block";
     document.getElementById("nombreUser2").innerHTML =
-    "Lo siento " + nombreUserfinal;
+      "Lo siento " + nombreUserfinal;
     document.getElementById("puntuacion2").innerHTML = puntos + "/4";
   }
 }
 
-function reiniciarprueba(){
+function reiniciarpruebaA() {
   document.getElementById("perdiste").style.display = "none";
   document.getElementById("ganaste").style.display = "none";
-  document.getElementById("bienvenida").style.display = "block";
-  puntos = 0
+  document.getElementById("1pregunta").style.display = "block";
+  puntos = 0;
 }
 
+function reiniciarpruebaB(){
+  document.getElementById("perdiste").style.display = "none";
+  document.getElementById("ganaste").style.display = "none";
+  document.getElementById("1Bpregunta").style.display = "block";
+  puntos = 0;
 
-function cargando(){
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("home").style.display = "block";
 }

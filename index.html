@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz - Gris Game</title>
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -34,9 +34,12 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
-  <body onload="cargando()">
-
-
+  <body>
+    <audio controls autoplay="true" volume='5' style="display: none;">
+      <source src="./gris.ogg" type="audio/ogg" />
+      <source src="./gris.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
     <div class="fondo" id="home">
       <div class="center">
         <div class="box">
@@ -50,7 +53,6 @@
               id="nombre"
             />
             <input type="button" value="Continuar" id="guardarNombre" />
-
           </div>
         </div>
       </div>
@@ -71,9 +73,16 @@
             <button
               type="button"
               class="btn-iniciar-bienvenida-comenzar"
-              id="comenzarQuiz"
+              id="comenzarQuizA"
             >
-              Comenzar
+              Comenzar Prueba A
+            </button>
+            <button
+              type="button"
+              class="btn-iniciar-bienvenida-comenzar"
+              id="comenzarQuizB"
+            >
+              Comenzar Prueba B
             </button>
             <a
               href="https://www.youtube.com/watch?v=gvECQlxrhbw"
@@ -87,7 +96,7 @@
         </div>
       </div>
     </div>
-
+    <!---- Pantallas preguntas A-->
     <div class="fondo-1-pregunta" id="1pregunta" style="display: none;">
       <div class="center">
         <div class="box">
@@ -235,6 +244,148 @@
       </div>
     </div>
 
+    <!--- Pantallas preguntas B-->
+
+    <div class="fondo-1-pregunta" id="1Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span>1-¿Que genero de videojuego es gris?</span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-uno"
+              onclick="respuesta1Pregunta1B()"
+            >
+              Plataforma y Aventura
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-uno"
+              onclick="respuesta2Pregunta1B()"
+            >
+              Aventura
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-uno"
+              onclick="respuesta3Pregunta1B()"
+            >
+              Biografico
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fondo-2-pregunta" id="2Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span>2-¿En que ano fue lanzado el videojuego gris?</span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-dos"
+              onclick="respuesta1Pregunta2B()"
+            >
+              2018
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-dos"
+              onclick="respuesta2Pregunta2B()"
+            >
+              2019
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-dos"
+              onclick="respuesta3Pregunta2B()"
+            >
+              2020
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fondo-3-pregunta" id="3Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span>3-¿De que forma es el "amigo" de gris?</span>
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-tres"
+              onclick="respuesta1Pregunta3B()"
+            >
+              Triangulo
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-tres"
+              onclick="respuesta2Pregunta3B()"
+            >
+              Cuadrado
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-tres"
+              onclick="respuesta3Pregunta3B()"
+            >
+              Redondo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fondo-4-pregunta" id="4Bpregunta" style="display: none;">
+      <div class="center">
+        <div class="box">
+          <div class="title">
+            <span
+              >4-¿De que forma animal se representa la oscuridad(depresion) en
+              gris?</span
+            >
+          </div>
+          <div class="btn-box-preguntas">
+            <button
+              type="button"
+              class="btn-pregunta-cuatro"
+              onclick="respuesta1Pregunta4B()"
+            >
+              Anguila y Pajaro
+            </button>
+
+            <button
+              type="button"
+              class="btn-pregunta-cuatro"
+              onclick="respuesta2Pregunta4B()"
+            >
+              Raton y Murcielago
+            </button>
+            <button
+              type="button"
+              class="btn-pregunta-cuatro"
+              onclick="respuesta3Pregunta4B()"
+            >
+              Paloma y Rana
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Pantallas Ganaste o perdiste-->
     <div class="fondo-ganaste" id="ganaste" style="display: none;">
       <div class="center">
         <div class="box">
@@ -251,16 +402,16 @@
             <button
               type="button"
               class="btn-reiniciar-ganaste"
-              onclick="reiniciarprueba()"
+              onclick="reiniciarpruebaA()"
             >
-              Reiniciar Prueba
+              Tomar Prueba A
             </button>
             <button
               type="button"
               class="btn-finalizar-ganaste"
-              onclick="terminarprueba()"
+              onclick="reiniciarpruebaB()"
             >
-              Terminar Prueba
+              Tomar Prueba B
             </button>
           </div>
         </div>
@@ -283,28 +434,22 @@
             <button
               type="button"
               class="btn-reiniciar-perdida"
-              onclick="reiniciarprueba()"
+              onclick="reiniciarpruebaA()"
             >
-              Reiniciar Prueba
+              Tomar Prueba A
             </button>
             <button
               type="button"
               class="btn-finalizar-perdida"
-              onclick="terminarprueba()"
+              onclick="reiniciarpruebaB()"
             >
-              Terminar Prueba
+              Tomar Prueba B
             </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="sk-folding-cube" id='loading'>
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
-    </div>
     <script src="./js/app.js"></script>
   </body>
 </html>
