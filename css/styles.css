@@ -128,9 +128,6 @@ body {
   text-align: center;
 }
 
-/*
-primera pantalla fondo y estilos
-*/
 .fondo {
   background-image: url("../img/Imagen-home.png");
   margin: 0;
@@ -166,24 +163,7 @@ button.btn-iniciar-bienvenida-comenzar:hover {
   background-color: #1a429e;
   transition: 1s;
 }
-button.btn-iniciar-bienvenida-ver-trailer {
-  width: 50%;
-  background-color: #648ae3;
-  color: #fafafa;
-  font-size: 20px;
-  padding: 15px 20px;
-  margin: 20px 0;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  align-items: center;
-}
-button.btn-iniciar-bienvenida-ver-trailer:hover {
-  background-color: #4b65a3;
-  transition: 1s;
-}
-/*
-Pantalla bienvenida fondo y estilos*/
+
 
 .fondo-bienvenida {
   background-image: url("../img/img-bienvenida.jpg");
@@ -203,8 +183,8 @@ Pantalla bienvenida fondo y estilos*/
   right: 0;
   background: rgba(21, 60, 150, 0.5);
 }
+/*-------------------------------------------Estilos para pantallas de tipo A-----------------------------------------------*/
 
-/*Pantalla primera pregunta fondo y estilos */
 .fondo-1-pregunta {
   background-image: url("../img/img-1-pregunta.jpg");
   margin: 0;
@@ -241,7 +221,6 @@ button.btn-pregunta-uno:hover{
   transition: 1s;
 }
 
-/*Pantalla segunda pregunta fondo y estilos */
 
 .fondo-2-pregunta {
   background-image: url("../img/img-2-pregunta.jpg");
@@ -278,7 +257,6 @@ button.btn-pregunta-dos:hover{
   background-color: #c962ad;
   transition: 1s;
 }
-/*Pantalla tercera pregunta fondo y estilos */
 
 .fondo-3-pregunta {
   background-image: url("../img/img-3-pregunta.jpg");
@@ -315,7 +293,6 @@ button.btn-pregunta-tres:hover{
   background-color: #b82030;
   transition: 1s;
 }
-/*Pantalla cuarta pregunta fondo y estilos */
 
 .fondo-4-pregunta {
   background-image: url("../img/img-4-pregunta.jpg");
@@ -352,8 +329,6 @@ button.btn-pregunta-cuatro:hover {
   background-color: #b950a3;
   transition: 1s;
 }
-/*Pantalla derrota fondo y estilos */
-
 .fondo-perdiste {
   background-image: url("../img/img-perdida.jpg");
   margin: 0;
@@ -407,7 +382,6 @@ button.btn-finalizar-perdida:hover {
   transition: 1s;
 }
 
-/*Pantalla usuario gana fondo y estilos */
 .fondo-ganaste {
   background-image: url("../img/img-victoria.jpg");
   margin: 0;
@@ -427,7 +401,7 @@ button.btn-finalizar-perdida:hover {
   background: rgba(49, 206, 223, 0.5);
 }
 
-button.btn-reiniciar-ganaste {
+button.btn-PruebaA-TipoA {
   width: 50%;
   color: #fafafa;
   font-size: 20px;
@@ -439,12 +413,12 @@ button.btn-reiniciar-ganaste {
   align-items: center;
   background-color: #3AD9EB;
 }
-button.btn-reiniciar-ganaste:hover {
+button.btn-PruebaA-TipoA:hover {
   background-color: rgb(41, 149, 161);
   transition: 1s;
 }
 
-button.btn-finalizar-ganaste {
+button.btn-PruebaA-TipoB {
   width: 50%;
   color: #fafafa;
   font-size: 20px;
@@ -458,10 +432,254 @@ button.btn-finalizar-ganaste {
 
 }
 
-button.btn-finalizar-ganaste:hover{
+button.btn-PruebaA-TipoB:hover{
   background-color: rgb(105, 162, 179);
   transition: 1s;
 }
+
+
+
+/*-------------------------------------------Estilos para pantallas de tipo B-----------------------------------------------*/
+
+.fondo-1-preguntaB {
+  background-image: url("../img/img-1-preguntaB.png");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-1-preguntaB:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(158, 65, 70, 0.5);
+}
+
+button.btn-pregunta-unoB {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #EF7C8F;
+}
+button.btn-pregunta-unoB:hover{
+  background-color: #d1697a;
+  transition: 1s;
+}
+
+.fondo-2-preguntaB {
+  background-image: url("../img/img-2-preguntaB.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-2-preguntaB:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(230, 141, 73, 0.5);
+}
+
+button.btn-pregunta-dosB {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #F19954;
+}
+button.btn-pregunta-dosB:hover{
+  background-color: rgb(224, 128, 54);
+  transition: 1s;
+}
+
+.fondo-3-preguntaB {
+  background-image: url("../img/img-3-preguntaB.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-3-preguntaB:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(242, 180, 102, 0.5);
+}
+
+button.btn-pregunta-tresB {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #6F9294;
+}
+button.btn-pregunta-tresB:hover{
+  background-color: rgb(127, 173, 175);
+  transition: 1s;
+}
+
+.fondo-4-preguntaB {
+  background-image: url("../img/img-4-preguntaB.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-4-preguntaB:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(212, 144, 82, 0.5);
+}
+
+button.btn-pregunta-cuatroB {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #CB663C;
+}
+button.btn-pregunta-cuatroB:hover {
+  background-color: rgb(230, 119, 72);
+  transition: 1s;
+}
+
+
+.fondo-perdisteB {
+  background-image: url("../img/img-perdidaB.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-perdisteB:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(8, 8, 8, 0.65);
+}
+
+
+
+button.btn-PruebaB-TipoB {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #C7562A;
+}
+button.btn-PruebaB-TipoB:hover {
+  background-color: rgb(224, 98, 48);
+  transition: 1s;
+}
+
+.fondo-ganasteB {
+  background-image: url("../img/img-victoriaB.jpg");
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondo-ganasteB:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(169, 101, 17, 0.5);
+}
+
+button.btn-PruebaB-TipoA {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #3AD9EB;
+}
+button.btn-PruebaB-TipoA:hover {
+  background-color: rgb(41, 149, 161);
+  transition: 1s;
+}
+
+
+button.btn-pruebaB-TipoB {
+  width: 50%;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+  background-color: #C7562A;
+
+}
+
+button.btn-pruebaB-TipoB:hover{
+  background-color: rgb(241, 105, 51);
+  transition: 1s;
+}
+
 
 
 
